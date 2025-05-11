@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego 21 - Blackjack</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td><img id="cartaJugadorImagen" src="img/1/2.jpg" width="50px"></td>
+            <td><img id="cartaCasaImagen" src="img/1/2.jpg" width="50px"></td>
+        </tr>
+        <tr>
+            <td>JUGADOR</td>
+            <td>CASA</td>
+        </tr>
+    </table>
+
+    <br>
+    <label>CARTA JUGADOR: </label><label id="cartaJugador">0</label><br>
+    <label>CARTA CASA: </label><label id="cartaCasa">0</label><br>
+    <label>RESULTADO: </label><label id="resultado">Esperando...</label><br>
+
+    <!-- Botones del juego -->
+    <button onclick="jugar()">JUGAR</button>
+    <button onclick="pedirCartaJugador()">PEDIR</button>
+    <button onclick="plantarse()">PLANTARSE</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
