@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RULETA</title>
+    <link rel="stylesheet" href="styles/ruletaEuropea.css">
+</head>
+<body>
+    <h1>JUEGO DE LA RULETA </h1>
+    <div id="inicio">
+        <input type="number" id="saldoInicial" placeholder="Ingresa tu saldo inicial">
+        <button onclick="iniciarJuego()">Iniciar</button>
+    </div>
+
+    <div id="info">
+        <p>SALDO: <span id="saldo">0</span></p>
+    </div>
+
+    <div id="apuesta">
+        <input type="number" id="monto" placeholder="MONTO QUE VA A APOSTAR">
+        <select id="tipo" onchange="act()">
+            <option value="numero">numero</option>
+            <option value="paridad">paridad</option>
+            <option value="color">color</option>
+        </select>
+        <select  id="valor"></select>
+        <input type="text" id="valorTxt" placeholder="valores que desea apostar">
+        <button onclick="apostar()">JUGAR</button>
+    </div>
+    <div id="resultado"></div>
+    <script src="scripts/ruleta.js"></script>
+</body>
+</html>

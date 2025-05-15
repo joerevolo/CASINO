@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Jan Ken Po en HTML!</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .choices button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .results {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+        .house-choice img {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+  <h1>¡Juguemos Jan Ken Po!</h1>
+    <p>Elige tu jugada:</p>
+    <div class="choices">
+        <button onclick="jugar('piedra')">Piedra</button>
+        <button onclick="jugar('papel')">Papel</button>
+        <button onclick="jugar('tijera')">Tijera</button>
+    </div>
+
+    <div class="results">
+        <h2>La casa elige:</h2>
+        <div class="house-choice" id="houseChoice">
+            </div>
+        <div id="roundResult">
+            </div>
+        <div id="score">
+            </div>
+    </div>
+  <script src="jankenpo.js"></script>
+</body>
+</html>

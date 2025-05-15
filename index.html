@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego 21 - Blackjack</title>
+</head>
+<body>
+    <table>
+    <tr>
+        <td>
+            JUGADOR 
+            <img id="cartaVolteadaJugador" src="img/carta volteada.jpg" width="40" style="vertical-align: middle;">
+        </td>
+        <td id="contenedorJugador"></td>
+    </tr>
+    <tr>
+        <td>
+            CASA 
+            <img id="cartaVolteadaCasa" src="img/carta volteada.jpg" width="40" style="vertical-align: middle;">
+        </td>
+        <td id="contenedorCasa"></td>
+    </tr>
+</table>
+
+
+    <br>
+    <label>CARTA JUGADOR: </label><label id="cartaJugador">0</label><br>
+    <label>CARTA CASA: </label><label id="cartaCasa">0</label><br>
+    <label>RESULTADO: </label><label id="resultado">Esperando...</label><br>
+
+    <!-- Botones del juego -->
+    <button onclick="jugar()">JUGAR</button>
+    <button onclick="pedirCartaJugador()">PEDIR</button>
+    <button onclick="plantarse()">PLANTARSE</button>
+
+    <script src="app.js"></script>
+</body>
+</html>
