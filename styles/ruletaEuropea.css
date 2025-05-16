@@ -27,3 +27,24 @@ button {
 #valor{
     display: none;
 }
+#apuesta {
+    display: none;
+}
+#btnRegresar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: 2px solid gold;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#btnRegresar:hover {
+    background-color: gold;
+    color: #111;
+}

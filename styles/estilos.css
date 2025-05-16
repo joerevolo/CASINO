@@ -1,0 +1,83 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #bcc4c7;
+    color: #000000;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+  
+  table {
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    width: 500px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(150, 140, 140, 0.5);
+  }
+  
+  td {
+    padding: 10px 15px;
+    vertical-align: middle;
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  
+  #contenedorJugador, #contenedorCasa {
+    min-height: 80px;
+  }
+  
+  label {
+    font-weight: 600;
+    margin-right: 5px;
+  }
+  
+  #resultado {
+    font-weight: 700;
+    color: #1b8f3e;
+    margin-top: 10px;
+    min-height: 24px;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+  
+  /* Botones estilo moderno */
+  button {
+    background-color: #1ca8d6;
+    border: none;
+    border-color: black;
+    color: rgb(2, 2, 2);
+    padding: 12px 25px;
+    margin: 5px 10px 10px 0;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover:not(:disabled) {
+    background-color: #6168c7;
+  }
+  
+  button:disabled {
+    background-color: #9999b3;
+    cursor: not-allowed;
+  }
+  
+  /* Carta volteada */
+  img {
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Contenedor para cartas */
+  #contenedorJugador img, #contenedorCasa img {
+    margin-right: 8px;
+    vertical-align: middle;
+  }

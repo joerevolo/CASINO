@@ -82,11 +82,15 @@ class JuegoRuleta {
             alert("Ingresa un saldo válido.");
             return;
         }
-
+    
         this.jugador = new Jugador(saldoInicial);
         document.getElementById("saldo").textContent = this.jugador.saldo;
+    
+        // Ocultar el formulario inicial
         document.getElementById("inicio").style.display = "none";
-        document.getElementById("juego").style.display = "block";
+    
+        // Mostrar los campos de apuesta
+        document.getElementById("apuesta").style.display = "block";
     }
 
     act() {

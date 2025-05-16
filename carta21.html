@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Juego 21 - Blackjack🥸</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+    <style>
+        /* Botón en la esquina superior derecha */
+        #btnRegresar {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            padding: 8px 12px;
+            background-color: #5a5e64;
+            border-color: aliceblue;
+            color: rgb(3, 3, 3);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            z-index: 1000;
+        }
+
+        #btnRegresar:hover {
+            background-color: #5e5b39;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Botón en la esquina superior derecha -->
+    <button id="btnRegresar" onclick="location.href='index.html'">REGRESAR</button>
+
+    <tr style="width: 30px;"></b>😎Juego del 21- Blackjack😊 <b></tr>
+    <table>
+        <tr>
+            <td>
+                JUGADOR 
+                <img id="cartaVolteadaJugador" src="img/carta volteada.jpg" width="40" style="vertical-align: middle;">
+            </td>
+            <td id="contenedorJugador"></td>
+        </tr>
+        <tr>
+            <td>
+                CASA 
+                <img id="cartaVolteadaCasa" src="img/carta volteada.jpg" width="40" style="vertical-align: middle;">
+            </td>
+            <td id="contenedorCasa"></td>
+        </tr>
+    </table>
+
+    <br>
+    <label>CARTA JUGADOR: </label><label id="cartaJugador">0</label><br>
+    <label>CARTA CASA: </label><label id="cartaCasa">0</label><br>
+    <label>RESULTADO: </label><label id="resultado">Esperando...</label><br>
+
+    <!-- Botones del juego -->
+    <button id="btnJugar" onclick="jugar()">JUGAR</button>
+    <button id="btnPedir" onclick="pedirCartaJugador()">PEDIR</button>
+    <button id="btnPlantarse" onclick="plantarse()">PLANTARSE</button>
+
+    <script src="scripts/app.js"></script>
+</body>
+</html>

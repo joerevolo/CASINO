@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Piedra, Papel o Tijera</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    #score {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
+
+    #roundResult {
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    #houseChoice {
+      margin-bottom: 15px;
+    }
+
+    #houseChoice img {
+      width: 100px;
+      height: auto;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .player-choices button {
+      margin: 0 10px;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .player-choices button img {
+      width: 50px;
+      height: auto;
+      vertical-align: middle;
+    }
+    #btnRegresar {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #444;
+    color: white;
+    border: 2px solid gold;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    }
+
+    #btnRegresar:hover {
+        background-color: gold;
+        color: #111;
+    }
+  </style>
+</head>
+<body>
+  <button id="btnRegresar" onclick="location.href='index.html'">REGRESAR</button>
+
+  <h1>¡Piedra, Papel o Tijera!</h1>
+
+  <div id="score">Tu: 0 - Casa: 0</div>
+  <div id="roundResult">Resultado: ¡Elige tu jugada!</div>
+  <div id="houseChoice">Casa: ?</div> <div class="player-choices">
+    <button onclick="juego.jugar('piedra')"><img src="img/piedra.png" alt="Piedra"></button>
+    <button onclick="juego.jugar('papel')"><img src="img/papel.png" alt="Papel"></button>
+    <button onclick="juego.jugar('tijera')"><img src="img/tijera.png" alt="Tijera"></button>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const juego = new JuegoJanKenPo("usuario-score", "houseChoice", "roundResult", "score");
+    });
+  </script>
+  <script src="scripts/JanKenPo.js"></script>
+</body>
+</html>

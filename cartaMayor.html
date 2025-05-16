@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Juego de la Carta Mayor</title>
+  <link rel="stylesheet" href="styles/cartaM.css" />
+</head>
+<body>
+  <h1>Juego de la Carta Mayor</h1>
+  <button id="btnRegresar" onclick="location.href='index.html'">REGRESAR</button>
+
+  <div class="card-container">
+    <img class="card" id="playerCard" src="cartasMayores/Reversa.jpg" alt="Carta jugador" />
+    <img class="card" id="computerCard" src="cartasMayores/Reversa.jpg" alt="Carta computadora" />
+  </div>
+  <button id="drawButton">Sacar Carta</button>
+  <div id="result"></div>
+
+  <script src="scripts/main.js"></script>
+</body>
+</html>
